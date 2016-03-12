@@ -1,0 +1,20 @@
+<ion-view view-title="Motion Lists">
+  <ion-content>
+    <div class="card">
+      <div class="item item-avatar">
+        <img src="mcfly.jpg">
+        <h2>{{fridge.name}}</h2>
+        <p>{{fridge.address}}</p>
+      </div>
+    </div>
+
+    <div class="list">
+      <a class="item item-thumbnail-left" ng-repeat="product in fridge.products">
+        <img src="{{product.picture}}">
+        <h2>{{product.name}}</h2>
+        <p>{{product.quantity}}{{product.quantity}}</p>
+      </a>
+    </div>
+
+  </ion-content>
+</ion-view>

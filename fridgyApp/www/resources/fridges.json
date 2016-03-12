@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Martha Sánchez",
+    "address": "Calle 161 # 10 - 12 Apto 312",
+    "category": 1
+  },
+  {
+    "id": 2,
+    "name": "Carlos Torres",
+    "address": "Calle 161 # 10 - 12 Apto 310",
+    "category": 1
+  },
+  {
+    "id": 3,
+    "name": "Ronald Ruiz",
+    "address": "Calle 161 # 10 - 12 Apto 342",
+    "category": 1
+  },
+  {
+    "id": 4,
+    "name": "Luisa Gonzalez",
+    "address": "Calle 161 # 10 - 12 Apto 124",
+    "category": 1
+  },
+  {
+    "id": 5,
+    "name": "Ivan Castro",
+    "address": "Calle 161 # 10 - 12 Apto 982",
+    "category": 1
+  },
+  {
+    "id": 6,
+    "name": "Rosa Díaz",
+    "address": "Calle 161 # 10 - 12 Apto 23",
+    "category": 1
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name": "fridgyApp",
+  "app_id": "1e012339",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
