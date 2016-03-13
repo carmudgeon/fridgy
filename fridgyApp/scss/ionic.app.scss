@@ -30,3 +30,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
   padding-top: 57px;
 }
+
+.upload-food-picture {
+  width: 111px !important;
+}
+.product-details {
+  .product-picture {
+    max-height: 200px;
+  }
+}

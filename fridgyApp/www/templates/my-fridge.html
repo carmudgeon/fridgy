@@ -1,20 +1,20 @@
-<ion-view view-title="Motion Lists">
+<ion-view view-title="My Fridgy">
   <ion-content>
     <div class="card">
       <div class="item item-avatar">
-        <img src="mcfly.jpg">
+        <img src="{{fridge.picture}}">
         <h2>{{fridge.name}}</h2>
         <p>{{fridge.address}}</p>
       </div>
     </div>
 
     <div class="list">
-      <a class="item item-thumbnail-left" ng-repeat="product in fridge.products">
+      <a class="item item-thumbnail-left" ng-repeat="product in fridge.products" ng-click="goToProductDetails(product)">
         <img src="{{product.picture}}">
         <h2>{{product.name}}</h2>
-        <p>{{product.quantity}}{{product.quantity}}</p>
+        <p>{{product.quantity}} {{product.unity}}</p>
       </a>
     </div>
-
+      <button class="button button-fab button-balanced" ng-click="goToAddProduct()">+</button>
   </ion-content>
 </ion-view>

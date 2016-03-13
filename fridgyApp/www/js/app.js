@@ -6,96 +6,116 @@
 var app = angular.module('starter', ['ionic', 'ionic-material']);
 
 app.run(function ($ionicPlatform) {
-    $ionicPlatform.ready(function () {
-        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-        // for form inputs)
+  $ionicPlatform.ready(function () {
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
 
-        if (window.cordova && window.cordova.plugins.Keyboard) {
-            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-        }
-        if (window.StatusBar) {
-            StatusBar.styleDefault();
-        }
-    });
+    if (window.cordova && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+    }
+    if (window.StatusBar) {
+      StatusBar.styleDefault();
+    }
+  });
 })
 
 app.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider
+  $stateProvider
 
     .state('app', {
-        url: '/app',
-        abstract: true,
-        templateUrl: 'templates/menu.html',
-        controller: 'AppCtrl'
+      url: '/app',
+      abstract: true,
+      templateUrl: 'templates/menu.html',
+      controller: 'AppCtrl'
     })
 
     .state('app.home', {
-        url: '/home',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/home.html'
-            }
+      url: '/home',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/home.html'
         }
+      }
     })
-      .state('app.lists', {
-        url: '/lists',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/lists.html',
-                controller: 'ListsCtrl'
-            }
+    .state('app.lists', {
+      url: '/lists',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/lists.html',
+          controller: 'ListsCtrl'
         }
+      }
     })
 
     .state('app.ink', {
-        url: '/ink',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/ink.html',
-                controller: 'InkCtrl'
-            }
+      url: '/ink',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/ink.html',
+          controller: 'InkCtrl'
         }
+      }
     })
 
     .state('app.components', {
-        url: '/components',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/components.html',
-                controller: 'ComponentsCtrl'
-            }
+      url: '/components',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/components.html',
+          controller: 'ComponentsCtrl'
         }
+      }
     })
 
     .state('app.myFridge', {
-        url: '/my-fridge',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/my-fridge.html',
-                controller: 'MyFridge'
-            }
+      url: '/my-fridge',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/my-fridge.html',
+          controller: 'MyFridge'
         }
+      }
     })
     .state('app.nearFridges', {
-        url: '/near-fridges',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/near-fridges.html',
-                controller: 'NearFridgesCtrl'
-            }
+      url: '/near-fridges',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/near-fridges.html',
+          controller: 'NearFridgesCtrl'
         }
+      }
     })
     .state('app.fridge', {
-        url: '/fridge/:id',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/fridge.html',
-                controller: 'FridgeCtrl'
-            }
+      url: '/fridge/:id',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/fridge.html',
+          controller: 'FridgeCtrl'
         }
+      }
     })
-    ;
+    .state('app.addProduct', {
+      url: '/add-product',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/add-product.html',
+          controller: 'AddProductCtrl'
+        }
+      },
+      params: {products: null}
+    })
+    .state('app.productDetails', {
+      url: '/product-details',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/product-details.html',
+          controller: 'ProductDetailsCtrl'
+        }
+      },
+      params: {product: null}
+    })
+  ;
 
-    // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/home');
+  // if none of the above states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/app/home');
 });

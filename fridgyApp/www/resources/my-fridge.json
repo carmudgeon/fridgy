@@ -3,6 +3,7 @@
   "name": "Martha Sánchez",
   "address": "Calle 161 # 10 - 12 Apto 312",
   "category": 1,
+  "picture": "img/martha.jpg",
   "products": [
     {
       "name": "Papa",

@@ -17744,3 +17744,9 @@ a.button .icon:before, a.button.icon-left:before, a.button.icon-right:before, a.
 
 .fridge-menu-content {
   padding-top: 57px; }
+
+.upload-food-picture {
+  width: 111px !important; }
+
+.product-details .product-picture {
+  max-height: 200px; }
