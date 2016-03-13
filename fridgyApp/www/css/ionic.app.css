@@ -17748,9 +17748,11 @@ a.button .icon:before, a.button.icon-left:before, a.button.icon-right:before, a.
     margin-top: 108px;
     vertical-align: middle; }
   .home p {
-    color: white; }
+    color: white;
+    padding: 13px; }
   .home .icon {
-    height: 65px; }
+    height: 54px;
+    margin: auto; }
   .home .slogan {
     padding: 0px 69px;
     text-align: center;
@@ -17783,6 +17785,68 @@ a.button .icon:before, a.button.icon-left:before, a.button.icon-right:before, a.
   .home .do-it {
     text-align: center;
     padding: 10px; }
+
+.near-fridges h2 {
+  color: #EA7B44;
+  font-weight: bolder; }
+
+.near-fridges .rating i {
+  color: #f7c06f; }
+
+.my-fridge .add-product {
+  border-color: #EA7B44;
+  background-color: #EA7B44;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px; }
+  .my-fridge .add-product i {
+    font-size: 2rem;
+    margin-top: 0; }
+
+.my-fridge .card {
+  padding: 0px;
+  box-shadow: 3px 3px 9px #FECC83; }
+  .my-fridge .card h2 {
+    color: #EA7B44;
+    font-weight: bolder; }
+  .my-fridge .card .rating i {
+    color: #f7c06f; }
+
+.my-fridge .item h2 {
+  color: #77BBAE;
+  font-weight: bolder; }
+
+.add-product .save {
+  position: absolute;
+  bottom: 0px;
+  background-color: #EA7B44;
+  color: white;
+  margin: 0px; }
+
+.add-product span.input-label, .add-product .input-label {
+  color: #77BBAE;
+  font-weight: bolder;
+  text-align: left; }
+
+.add-product .quantity input {
+  text-align: right; }
+
+.add-product .quantity select {
+  width: 100px; }
+
+.add-product .list .item {
+  border: none;
+  min-height: 48px;
+  text-align: left;
+  padding: 9px 15px 0; }
+
+.add-product h1 {
+  font-weight: bolder;
+  color: #77BBAE; }
+
+.product-details h1 {
+  color: #77BBAE; }
 
 .menu .bar.bar-header.expanded {
   min-height: 100px; }

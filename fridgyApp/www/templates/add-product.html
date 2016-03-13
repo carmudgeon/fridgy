@@ -1,4 +1,4 @@
-<ion-view view-title="Add Product">
+<ion-view view-title="Add Product" class="add-product">
   <ion-content>
     <div class="item item-image">
       <img src="img/library-upload.png" class="upload-food-picture">
@@ -19,27 +19,11 @@
           <option value="parcialmente abierto">Parcialmente abierto</option>
         </select>
       </label>
-      <label class="item item-input item-select">
-        <div class="input-label" ng-model="newProduct.quantity">
-          ¿Cuántos?
-        </div>
-        <select ng-model="newProduct.quantity">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-        </select>
-      </label>
-      <label class="item item-input item-select">
-        <select ng-model="newProduct.unity">
+
+      <label class="item item-input item-stacked-label row quantity">
+        <span class="input-label col">¿Cuántos?</span>
+        <input  class="col " type="number" placeholder="3" ng-model="newProduct.quantity">
+        <select ng-model="newProduct.unity" class="col">
           <option value="libras">Libras</option>
           <option value="kilos">Kilos</option>
           <option value="litros">Litros</option>
@@ -47,13 +31,20 @@
         </select>
       </label>
 
+
       <label class="item item-input item-stacked-label">
         <span class="input-label">Más detalles</span>
         <textarea placeholder="Marca fruco, rayado, tipo exportación..." ng-model="newProduct.description"></textarea>
       </label>
+
+      <label class="item item-input item-stacked-label row">
+        <span class="input-label col">¿Cuanto pedirás por él?</span>
+        <span class="col"> $ </span>
+        <input  class="col" type="number" placeholder="1000" ng-model="newProduct.price">
+      </label>
     </div>
-    <button class="button button-full button-positive" ng-click="addProduct()">
-      Guardar
-    </button>
   </ion-content>
+  <button class="button button-full save" ng-click="addProduct()">
+    Agregar a mi nevera
+  </button>
 </ion-view>

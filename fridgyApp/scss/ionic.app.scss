@@ -22,6 +22,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 @import "material";
 @import "home";
+@import "near-fridges";
+@import "my-fridge";
+@import "add-product";
+@import "product-details";
 
 .menu .bar.bar-header.expanded {
  min-height: 100px;
