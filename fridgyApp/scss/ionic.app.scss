@@ -21,6 +21,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 @import "material";
+@import "home";
 
 .menu .bar.bar-header.expanded {
  min-height: 100px;
@@ -38,4 +39,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   .product-picture {
     max-height: 200px;
   }
+}
+
+
+ion-header-bar.bar-assertive.bar.bar-header.disable-user-behavior {
+  background-color: #EA7B44;
 }

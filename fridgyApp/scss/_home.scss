@@ -1,0 +1,58 @@
+.home{
+  background-color: #EA7B44;
+  img.logo {
+    margin: auto;
+    width: 129px;
+    display: block;
+    margin-top: 108px;
+    vertical-align: middle;
+  }
+  p{
+    color: white;
+  }
+  .icon{
+    height: 65px;
+  }
+  .slogan{
+    padding: 0px 69px;
+    text-align: center;
+    font-size: 16px;
+    font-family: inherit;
+    text-decoration: initial;
+  }
+  .description{
+    margin-top: 36px;
+  }
+  .options{
+    margin-top: 90px;
+    .button{
+      color: white;
+      border: none;
+      text-transform: initial;
+      margin: 10px;
+      white-space: normal;
+      height: 67px;
+      line-height: 20px;
+      font-size: 18px;
+      text-align: initial;
+      padding: 0 25px;
+    }
+    .my-fridge{
+      background-color: #FECC83;
+      &:hover{
+      box-shadow: 3px 3px 9px rgba(119, 187, 174, 0.72);
+    }
+    }
+    .fridges{
+      background-color: #77BBAE;
+      &:hover{
+      box-shadow: 3px 3px 9px rgba(252, 203, 130, 0.55);
+    }
+    }
+  }
+
+  .do-it{
+    text-align: center;
+    padding: 10px;
+  }
+}

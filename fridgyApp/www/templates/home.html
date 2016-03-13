@@ -1,5 +1,20 @@
-<ion-view view-title="Home">
-  <ion-content>
-    Bienvenido a Fridgy!!!
+<ion-view view-title="Fridgy" hide-nav-bar="true">
+  <ion-content class="home">
+    <img class="logo" src="img/fridgy-logo-text.png" alt="">
+    <p class="slogan">Tu excusa para compartir la comida que no vas a consumir</p>
+    <div class="row options">
+      <button class="button icon-left ion-heart col my-fridge" ng-click="goToMyFridge()">Compartir mi nevera</button>
+      <button class="button icon-left ion-search col fridges" ng-click="goToNearFridges()">Buscar neveras</button>
+    </div>
+    <div class="row description">
+      <p class="col">¿Te excediste en el mercado y no sabes que hacer?</p>
+      <img class="icon" src="img/money-ico.png" alt="">
+      <p class="col">¿Tienes Hambre y desearìas tener una nevera cerca?</p>
+      <img class="icon" src="img/food-ico.png" alt="">
+    </div>
+    <div class="do-it">
+    <p class="col">Ahorra dinero, Comparte y Salva al planeta!</p>
+      <img class="icon" src="img/planet-ico.png" alt="">
+    </div>
   </ion-content>
 </ion-view>

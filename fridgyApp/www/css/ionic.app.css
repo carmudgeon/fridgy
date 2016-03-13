@@ -17739,6 +17739,51 @@ a.button .icon:before, a.button.icon-left:before, a.button.icon-right:before, a.
   box-shadow: none;
   color: #fff; }
 
+.home {
+  background-color: #EA7B44; }
+  .home img.logo {
+    margin: auto;
+    width: 129px;
+    display: block;
+    margin-top: 108px;
+    vertical-align: middle; }
+  .home p {
+    color: white; }
+  .home .icon {
+    height: 65px; }
+  .home .slogan {
+    padding: 0px 69px;
+    text-align: center;
+    font-size: 16px;
+    font-family: inherit;
+    text-decoration: initial; }
+  .home .description {
+    margin-top: 36px; }
+  .home .options {
+    margin-top: 90px; }
+    .home .options .button {
+      color: white;
+      border: none;
+      text-transform: initial;
+      margin: 10px;
+      white-space: normal;
+      height: 67px;
+      line-height: 20px;
+      font-size: 18px;
+      text-align: initial;
+      padding: 0 25px; }
+    .home .options .my-fridge {
+      background-color: #FECC83; }
+      .home .options .my-fridge:hover {
+        box-shadow: 3px 3px 9px rgba(119, 187, 174, 0.72); }
+    .home .options .fridges {
+      background-color: #77BBAE; }
+      .home .options .fridges:hover {
+        box-shadow: 3px 3px 9px rgba(252, 203, 130, 0.55); }
+  .home .do-it {
+    text-align: center;
+    padding: 10px; }
+
 .menu .bar.bar-header.expanded {
   min-height: 100px; }
 
@@ -17750,3 +17795,6 @@ a.button .icon:before, a.button.icon-left:before, a.button.icon-right:before, a.
 
 .product-details .product-picture {
   max-height: 200px; }
+
+ion-header-bar.bar-assertive.bar.bar-header.disable-user-behavior {
+  background-color: #EA7B44; }
