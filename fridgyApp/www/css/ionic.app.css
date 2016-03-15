@@ -17846,7 +17846,8 @@ a.button .icon:before, a.button.icon-left:before, a.button.icon-right:before, a.
   color: #77BBAE; }
 
 .product-details h1 {
-  color: #77BBAE; }
+  color: #77BBAE;
+  font-weight: bolder; }
 
 .menu .bar.bar-header.expanded {
   min-height: 100px; }
