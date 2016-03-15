@@ -1,7 +1,8 @@
-app.controller('AddProductCtrl', function ($scope, $stateParams, ionicMaterialMotion, $http, $state) {
+app.controller('AddProductCtrl', function ($scope, $stateParams, ionicMaterialMotion, $http, $state, $firebaseArray) {
   var products = [];
   var init = function() {
-    products =  $stateParams.products;
+    var fridgeProductsRef = new Firebase("https://carmudgeon.firebaseio.com/fridges/0/products");
+    products =  $firebaseArray(fridgeProductsRef);
     $scope.newProduct = {
       name: "",
       quantity: 3,
@@ -15,7 +16,7 @@ app.controller('AddProductCtrl', function ($scope, $stateParams, ionicMaterialMo
   init();
 
   $scope.addProduct = function() {
-    products.push($scope.newProduct);
+    products.$add($scope.newProduct);
     $state.go("app.myFridge");
   }
 });

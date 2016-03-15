@@ -2,7 +2,7 @@
   <ion-content>
     <div class="card">
       <div class="item item-avatar">
-        <img src="{{fridge.picture}}">
+        <img ng-src="{{fridge.picture}}">
         <h2>{{fridge.name}}</h2>
         <p>{{fridge.address}}</p>
         <div class="rating">
@@ -17,7 +17,7 @@
 
     <div class="list">
       <a class="item item-thumbnail-left" ng-repeat="product in fridge.products" ng-click="goToProductDetails(product)">
-        <img src="{{product.picture}}">
+        <img ng-src="{{product.picture}}">
         <h2>{{product.name}}</h2>
         <p>{{product.quantity}} {{product.unity}}</p>
         <p>${{product.price}}</p>

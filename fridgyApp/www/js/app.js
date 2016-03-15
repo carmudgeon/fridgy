@@ -43,35 +43,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('app.lists', {
-      url: '/lists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/lists.html',
-          controller: 'ListsCtrl'
-        }
-      }
-    })
-
-    .state('app.ink', {
-      url: '/ink',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/ink.html',
-          controller: 'InkCtrl'
-        }
-      }
-    })
-
-    .state('app.components', {
-      url: '/components',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/components.html',
-          controller: 'ComponentsCtrl'
-        }
-      }
-    })
 
     .state('app.myFridge', {
       url: '/my-fridge',
