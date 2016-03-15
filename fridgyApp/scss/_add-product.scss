@@ -1,0 +1,34 @@
+.add-product {
+  .save {
+    position: absolute;
+    bottom: 0px;
+    background-color: #EA7B44;
+    color: white;
+    margin: 0px;
+  }
+
+  span.input-label, .input-label {
+    color: #77BBAE;
+    font-weight: bolder;
+    text-align: left;
+  }
+  .quantity{
+    input{
+      text-align: right;
+    }
+    select {
+      width: 100px;
+    }
+  }
+
+  .list .item {
+    border: none;
+    min-height: 48px;
+    text-align: left;
+    padding: 9px 15px 0;
+  }
+  h1 {
+    font-weight: bolder;
+    color: #77BBAE;
+  }
+}

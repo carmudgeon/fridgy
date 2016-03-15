@@ -1,4 +1,4 @@
-<ion-view view-title="Near Fridges">
+<ion-view view-title="Near Fridges" class="near-fridges">
   <ion-content>
     <div class="bar bar-header item-input-inset">
       <label class="item-input-wrapper">
@@ -18,6 +18,13 @@
                 ng-click="goToFridge(fridge.id);">
         <img src="img/material4.jpg">
         <h2>{{fridge.name}}</h2>
+        <div class="rating">
+          <i class="ion-star" ng-show="fridge.rating > 0"></i>
+          <i class="ion-star" ng-show="fridge.rating > 1"></i>
+          <i class="ion-star" ng-show="fridge.rating > 2"></i>
+          <i class="ion-star" ng-show="fridge.rating > 3"></i>
+          <i class="ion-star" ng-show="fridge.rating > 4"></i>
+        </div>
         <p>{{fridge.address}}</p>
         <i class="icon ion-forward"></i>
       </ion-item>
