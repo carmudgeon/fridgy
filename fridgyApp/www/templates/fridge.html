@@ -1,4 +1,4 @@
-<ion-view view-title="Motion Lists">
+<ion-view view-title="{{fridge.name}} Fridge">
   <ion-content>
     <div class="card">
       <div class="item item-avatar">
@@ -9,12 +9,12 @@
     </div>
 
     <div class="list">
-      <a class="item item-thumbnail-left" ng-repeat="product in fridge.products">
+      <a class="item item-thumbnail-left" ng-repeat="product in fridge.products"  ng-click="goToProductDetails(product)">
         <img src="{{product.picture}}">
         <h2>{{product.name}}</h2>
         <p>{{product.quantity}}{{product.quantity}}</p>
       </a>
     </div>
-
   </ion-content>
 </ion-view>
+{{fridge.name}}

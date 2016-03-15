@@ -1,16 +1,21 @@
-app.controller('NearFridgesCtrl', function ($scope, $stateParams, ionicMaterialMotion, $http, $state) {
+app.controller('NearFridgesCtrl', function ($scope, $stateParams, ionicMaterialMotion, $http, $state, Fridges) {
 
-  $scope.fridges = [];
+
 
   $scope.blinds = function() {
-    document.getElementsByTagName('ion-list')[0].className += ' animate-blinds';
-    $http.get("/resources/fridges.json").then(function(data){
-      $scope.fridges = data.data;
-
-      setTimeout(function() {
-        ionicMaterialMotion.blinds();
-      }, 300);
-    });
+    $scope.fridges = Fridges;
+   // document.getElementsByTagName('ion-list')[0].className += ' animate-blinds';
+   // ionicMaterialMotion.blinds();
+    console.log($scope.fridges);
+    //document.getElementsByTagName('ion-list')[0].className += ' animate-blinds';
+    //
+    //$http.get("/resources/fridges.json").then(function(data){
+    //  $scope.fridges = data.data;
+    //
+    //  setTimeout(function() {
+    //    ionicMaterialMotion.blinds();
+    //  }, 300);
+    //});
   };
 
   $scope.blinds();

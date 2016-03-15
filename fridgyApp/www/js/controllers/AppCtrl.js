@@ -16,7 +16,7 @@
                     '       <h1 class="title">My Popover Title</h1>' +
                     '   </ion-header-bar>' +
                     '   <ion-content class="padding">' +
-                    '       My Popover Contents' +
+                    '       My Popover Contents2' +
                     '   </ion-content>' +
                     '</ion-popover-view>';
 

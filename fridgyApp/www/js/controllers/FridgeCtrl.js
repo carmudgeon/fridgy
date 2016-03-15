@@ -13,4 +13,10 @@ app.controller('FridgeCtrl', function ($scope, $stateParams, ionicMaterialMotion
 
   $scope.blinds();
 
+  $scope.goToProductDetails = function(product){
+    $state.go("app.productDetails", {
+      product: product
+    });
+  };
+
 });
