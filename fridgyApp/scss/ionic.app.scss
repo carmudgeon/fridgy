@@ -19,6 +19,7 @@ $dark:                            #444 !default;
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
+@import "variables";
 @import "www/lib/ionic/scss/ionic";
 @import "material";
 @import "home";
@@ -47,5 +48,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 ion-header-bar.bar-assertive.bar.bar-header.disable-user-behavior {
-  background-color: #EA7B44;
+  background-color: $main-color;
+  border-color: $secondary-color2;
 }

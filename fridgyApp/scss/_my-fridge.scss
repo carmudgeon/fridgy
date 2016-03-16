@@ -1,7 +1,7 @@
 .my-fridge{
   .add-product{
-    border-color: #EA7B44;
-    background-color: #EA7B44;
+    border-color: $main-color;
+    background-color: $main-color;
     color: white;
     position: absolute;
     bottom: 10px;
@@ -13,9 +13,9 @@
   }
   .card {
     padding: 0px;
-    box-shadow: 3px 3px 9px #FECC83;
+    box-shadow: 3px 3px 9px $secondary-color2;
     h2{
-      color: #EA7B44;
+      color: $main-color;
       font-weight: bolder;
     }
     .rating{
@@ -27,7 +27,7 @@
 
   .item {
     h2 {
-      color: #77BBAE;
+      color: $secondary-color1;
       font-weight: bolder;
     }
   }

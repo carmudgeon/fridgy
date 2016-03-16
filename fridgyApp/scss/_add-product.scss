@@ -2,13 +2,13 @@
   .save {
     position: absolute;
     bottom: 0px;
-    background-color: #EA7B44;
+    background-color: $main-color;
     color: white;
     margin: 0px;
   }
 
   span.input-label, .input-label {
-    color: #77BBAE;
+    color: $secondary-color1;
     font-weight: bolder;
     text-align: left;
   }
@@ -29,6 +29,6 @@
   }
   h1 {
     font-weight: bolder;
-    color: #77BBAE;
+    color: $secondary-color1;
   }
 }
